@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+      <div class="rounded-3xl bg-[#1c1d21] pb-5">
+        <nav class=" p-4 sticky rounded-xl">
+          <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-lg font-semibold">MyLogo</div>
+            <div class="hidden md:flex space-x-4">
+              <a href="#About" class="text-gray-300 hover:text-white pe-12">About</a>
+              <a href="#Project" class="text-gray-300 hover:text-white pe-12">Project</a>
+              <a href="#Education" class="text-gray-300 hover:text-white pe-12"
+                >Education</a
+              >
+              <a href="#Contact" class="text-gray-300 hover:text-white pe-12">Contact</a>
+            </div>
+            <div class="md:hidden">
+              <button id="menu-btn" class="text-gray-300 focus:outline-none">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="menu" class="hidden md:hidden flex flex-col space-y-2 mt-2">
+            <a href="#About" class="text-gray-300 hover:text-white">About</a>
+            <a href="#Project" class="text-gray-300 hover:text-white">Project</a>
+            <a href="#Education" class="text-gray-300 hover:text-white">Education</a>
+            <a href="#Contact" class="text-gray-300 hover:text-white">Contact</a>
+          </div>
+        </nav>
+
+      <!-- About me Section -->
+
+
+        <div class="text-[#ffffff]" id="About">
+          <div class="pt-4 sm:flex sm:pt-4 ">
+            <div class="p-2 pt-4 mx-2 rounded-md bg-[#1c1d21] box sm:ms-10 sm:px-8 sm:rounded-md sm:mx-2">
+              <p class="font-bold italic text-blue-500">Hello !!!</p>
+              <h1 class="text-4xl font-bold">I'm Shashikesh</h1>
+              <h1 class="text-4xl font-bold mb-2">Kumar Mishra</h1>
+              <span class="text-sm font-bold bg-blue-500 px-2 py-1">
+                Full Stack Web Developer
+              </span>
+              <p class="mt-2 ">
+                I am currently pursuing my Bachelor's degree at the University Institute of Technology, Burdwan, located in West Bengal. I also serve as the Placement Coordinator for the Batch of 2021-25 at my college.
+              </p>
+              <p>
+                <span class="text-green-500 font-bold sm:py-12">Skills I Have</span> :- C , C++ , Java ,DSA , HTML , CSS , JavaScript , React , Node.js ,
+                ExpressJS , Mongoose , Tailwind CSS , Bootstrap , Git & GitHub ,
+                JIRA , Bitbucket , TypeScript ,
+              </p>
+            </div>
+            <div class="text-center mx-2 pb-2 sm:bg-[#1c1d21] box rounded-md  sm:w-1/2 sm:pb-2 sm:mx-10 sm:pt-0">
+              <img
+               src="/shashiImage.jpg"
+               alt="not found"
+               class="rounded-md px-2 pt-2 w-96 h-64 sm:h-64 sm:w-96 sm:px-0 sm:pt-0 sm:rounded-md"
+             />
+             <p class="font-bold pt-2">Student at UIT, Burdwan</p>
+              <p class="font-bold">
+                <span class="text-green-400">Batch </span>:-<span
+                  class="text-red-500"
+                >
+                  2021-25</span
+                >
+              </p>
+           </div>
+          </div>
+        </div>
+      
+
+           <!-- Project section  -->
+      <div class=" mx-2 mt-4 rounded-md text-[#ffffff] bg-[#1c1d21] box  sm:mx-10 sm:mt-5" id="Project">
+        <div class="  ">
+          <p
+            class="text-center font-bold text-4xl italic pt-6 sm: text-center font-bold text-4xl italic"
+          >
+            Project 2024
+          </p>
+        </div>
+        <div class="grid grid-cols-1 p-8 sm:grid-cols-3 sm:pt-5 sm:mx-2   sm:rounded-md ">
+          <div class=" p-4 rounded-2xl my-2 sm:p-4 bg-[#1c1d21] box   sm:m-2 ">
+            <img
+              src="/Resume_Generator_Image.jpg"
+              class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
+            />
+            <p>Project Name: Resume Generator</p>
+            <p>Github Link: Shashikesh131</p>
+            <p class="my-2 pe-12 sm: mt-2">
+              Student can use it to store their carrier information and Create
+              their Resume according to the saved information.
+            </p>
+          </div>
+          <div class=" p-4 rounded-2xl my-2 sm:p-4 bg-[#1c1d21] box  sm:m-2 sm:rounded-2xl">
+            <img
+              src="/Food_App_Image.jpg"
+              class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
+            />
+            <p>Project Name: Food delivery</p>
+            <p>Github Link: Shashikesh131</p>
+            <p class="my-2 pe-12 sm: mt-2">
+              You can order Food on that website and you get the delivery under 20
+              min.
+            </p>
+          </div>
+          <div class=" p-4 rounded-2xl my-2 bg-[#1c1d21] box sm:p-4  sm:m-2 sm:rounded-2xl">
+            <img
+              src="/My_Portfolio.png"
+              class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
+            />
+            <p>Project Name: My Portfolio</p>
+            <p>Github Link: Shashikesh131</p>
+            <p class="my-2 pe-12 sm: mt-2">
+              It is my-portfolio. You can check it on GitHub or LinkedIn
+            </p>
+          </div>
+        </div>
+      </div>
+
+       <!-- // EDUCATION section -->
+ <div class="text-[#ffffff]  py-5" id="Education">
+  <div class="grid grid-cols-1 px-2 mx-2 pt-10 rounded-md  box sm:mx-10  sm:grid-cols-2 sm:pt-1">
+    <div class=" sm:pt-24 sm:ps-10">
+      <h1 class="text-4xl font-bold mb-4 text-[#eb8f34]">EDUCATION</h1>
+      <p
+        class="border py-1 bg-blue-900 mr-28 mb-4 sm:border py-1 bg-blue-900 mr-52 mb-4"
+      ></p>
+      <p>
+        I had done my Secondary Education from Mahatma Gandhi Sikshan
+        Sansthan which is affliated by Central Board of Secondary Education
+        with a aggregate marks of 76.2% in the year 2018 then after I had
+        done my Intermediate from A.N College, Patna which is affliated by
+        Bihar School Examination Board with a aggregate marks 72.8% in the
+        year 2020 and Currently I am pursing Bachelor Degree in Computer
+        Science Engineering from University Institute of Technology,
+        Burdwan.
+      </p>
+    </div>
+    <div class="py-10  sm:py-10 sm:px-20">
+      <div>
+        <p class="font-bold text-[#e534eb]">Secondary Education</p>
+        <p>School Name: Mahatma Gandhi Sikshan Sansthan</p>
+        <p>Marks: 76.2%</p>
+        <p>Batch: 2018</p>
+      </div>
+      <div>
+        <p class="font-bold mt-6 text-[#e534eb]">Intermediate Education</p>
+        <p>College Name: A.N College, Patna</p>
+        <p>Stream: PCM</p>
+        <p>Marks: 72.8%</p>
+        <p>Batch: 2018-20</p>
+      </div>
+      <div>
+        <p class="font-bold mt-6 text-[#e534eb]">Bachelor Degree</p>
+        <p>From University Institute of Technology, Burdwan</p>
+        <p>Stream: CSE</p>
+        <p>Marks: 73.83%</p>
+        <p>Batch: 2021-25</p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Contact Section -->
+ <div class=" mx-2 rounded-md text-[#ffffff] bg-[#1c1d21] box sm:mx-10 sm:my-10 sm:py-8 sm:rounded-md" id="Contact">
+  <div class="py-6  sm:mx-10">
+    <h1 class="text-center font-bold text-4xl">GET IN TOUCH</h1>
+    <p class="text-center italic font-bold text-blue-400 text-sm py-2">
+      Let's Work Together
+    </p>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-4  sm:mx-10 ">
+    <div class="mb-12 text-center sm:text-center">
+      <p class="px-56 text-5xl sm:px-36 text-5xl"><FaPhoneVolume /></p>
+      <i class="fa fa-phone" style="font-size:48px;color:white"></i>
+      <p class="py-2 font-bold">&nbsp;&nbsp;Phone & Mobile</p>
+      <p>8340743487</p>
+      <p>3274678837</p>
+    </div>
+    <div class="mb-12 text-center sm:text-center">
+      <p class="px-28"><i class="fa fa-envelope" style="font-size:48px;color:white"></i></p>
+      <p class="py-2 sm:ps-5 font-bold sm:py-2">Email</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ui123t@gmail.com</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;shashi9934@gmail.com</p>
+    </div>
+
+    <div class="mb-12 text-center sm:text-center">
+      <p class="px-60 text-5xl sm:px-36 text-5xl"><FiInstagram /></p>
+      <p class="px-28"><i class="fa fa-instagram" style="font-size:48px;color:white"></i></p>
+      <p class="py-2 sm:ps-5 font-bold">Instagram</p>
+      <p class="sm:ps-4">Shashikesh@123</p>
+      <p class="sm:ps-4">shashi@122</p>
+    </div>
+
+    <div class="mb-12 text-center sm:text-center">
+      <p class="px-60 text-5xl sm:px-36 text-5xl"><FaMapMarkerAlt /></p>
+      <p class="px-28"><i class="fa fa-map-marker" style="font-size:48px;color:white"></i></i></p>
+      
+      <p class="py-2 font-bold">Address</p>
+      <p>Burdwan,West Bengal</p>
+      <p>Pincode :- 713101</p>
+    </div>
+  </div>
+  <div class="pt-6  sm:mx-10">
+    <p class="border pt-1 bg-blue-400 mx-12 rounded-md"></p>
+    <p class="text-4xl text-center text-red-500 italic py-2">
+      Shashikesh Kumar Mishra
+    </p>
+    <p class="border pt-1 bg-blue-400 mx-12 rounded-md"></p>
+    <p class="text-center font-semibold italic text-2xl py-10">
+      Portfolio 2024
+    </p>
+  </div>
+</div>
+</div>
+
+
+        <!-- vjkjd -->
+      </div>
+   
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

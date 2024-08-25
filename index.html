@@ -9,10 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-      <div class="rounded-3xl bg-[#1c1d21] pb-5">
-        <nav class=" p-4 sticky rounded-xl">
+      <div class="rounded-3xl bg-[#1c1d21] pb-5 mx-4 sm:mx-12">
+        <nav class=" p-3 sticky rounded-xl">
           <div class="container mx-auto flex justify-between items-center">
-            <div class="text-white text-lg font-semibold">MyLogo</div>
+            <div class="text-white text-lg font-semibold bg-red-500 px-3 py-1 rounded-3xl sm:ms-3">S</div>
             <div class="hidden md:flex space-x-4">
               <a href="#About" class="text-gray-300 hover:text-white pe-12">About</a>
               <a href="#Project" class="text-gray-300 hover:text-white pe-12">Project</a>
@@ -41,10 +41,10 @@
             </div>
           </div>
           <div id="menu" class="hidden md:hidden flex flex-col space-y-2 mt-2">
-            <a href="#About" class="text-gray-300 hover:text-white">About</a>
-            <a href="#Project" class="text-gray-300 hover:text-white">Project</a>
-            <a href="#Education" class="text-gray-300 hover:text-white">Education</a>
-            <a href="#Contact" class="text-gray-300 hover:text-white">Contact</a>
+            <a id="about" href="#About" class="text-gray-300 hover:text-white">About</a>
+            <a id="project" href="#Project" class="text-gray-300 hover:text-white">Project</a>
+            <a id="education" href="#Education" class="text-gray-300 hover:text-white">Education</a>
+            <a id="contact" href="#Contact" class="text-gray-300 hover:text-white">Contact</a>
           </div>
         </nav>
 
@@ -97,38 +97,44 @@
             Project 2024
           </p>
         </div>
-        <div class="grid grid-cols-1 p-8 sm:grid-cols-3 sm:pt-5 sm:mx-2   sm:rounded-md ">
-          <div class=" p-4 rounded-2xl my-2 sm:p-4 bg-[#1c1d21] box   sm:m-2 ">
-            <img
-              src="/Resume_Generator_Image.jpg"
-              class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
-            />
-            <p><span class="text-blue-500">Project Name:</span> <span class="text-green-500 italic">Resume Generator</span></p>
-            <p class="my-2 pe-12 sm: mt-2 italic">
-              Students can use it to store their career information and generate a resume based on the saved details.
-            </p>
-          </div>
-          <div class=" p-4 rounded-2xl my-2 sm:p-4 bg-[#1c1d21] box  sm:m-2 sm:rounded-2xl">
-            <img
-              src="/Food_App_Image.jpg"
-              class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
-            />
-            <p><span class="text-blue-500">Project Name:</span> <span class="text-green-500 italic">Food delivery</span></p>
-            <p class="my-2 pe-12 sm: mt-2 italic">
-              You can order Food on that website and you get the delivery under 20
-              min.
-            </p>
-          </div>
-          <div class=" p-4 rounded-2xl my-2 bg-[#1c1d21] box sm:p-4  sm:m-2 sm:rounded-2xl">
-            <img
-              src="/My_Portfolio.png"
-              class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
-            />
-            <p><span class="text-blue-500">Project Name:</span> <span class="text-green-500 italic">My Portfolio</span></p>
-            <p class="my-2 pe-12 sm: mt-2 italic">
-              It is my-portfolio. You can check it on GitHub or LinkedIn
-            </p>
-          </div>
+          <a href="https://bitbucket.org/developer-software-12/workspace/repositories/">
+            <div class="grid grid-cols-1 p-8 sm:grid-cols-3 sm:pt-5 sm:mx-2   sm:rounded-md ">
+              <div class=" p-4 rounded-2xl my-2 sm:p-4 bg-[#1c1d21] box   sm:m-2 ">
+                <img
+                  src="/Resume_Generator_Image.jpg"
+                  class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
+                />
+                <p><span class="text-blue-500 ">Project Name:</span> <span class="text-green-500 italic">Resume Generator</span></p>
+                <p class="my-2 pe-12 sm: mt-2 italic hidden sm:block">
+                  Students can use it to store their career information and generate a resume based on the saved details.
+                </p>
+              </div>
+          </a>
+          <a href="https://github.com/shashikesh203/restaurantsApp">
+            <div class=" p-4 rounded-2xl my-2 sm:p-4 bg-[#1c1d21] box  sm:m-2 sm:rounded-2xl">
+              <img
+                src="/Food_App_Image.jpg"
+                class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
+              />
+              <p><span class="text-blue-500">Project Name:</span> <span class="text-green-500 italic">Food delivery</span></p>
+              <p class="my-2 pe-12 sm: mt-2 italic hidden sm:block">
+                You can order Food on that website and you get the delivery under 20
+                min.
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/shashikesh203/Portfolio-2024">
+            <div class=" p-4 rounded-2xl my-2 bg-[#1c1d21] box sm:p-4  sm:m-2 sm:rounded-2xl">
+              <img
+                src="/My_Portfolio.png"
+                class="h-60 w-100 my-6 rounded-md sm:h-60 w-80 mb-2 rounded-md"
+              />
+              <p><span class="text-blue-500">Project Name:</span> <span class="text-green-500 italic">My Portfolio</span></p>
+              <p class="my-2 pe-12 sm: mt-2 italic hidden sm:block">
+                  It is my-portfolio. You can check it on GitHub or LinkedIn
+              </p>
+            </div>
+          </a>
         </div>
       </div>
 
@@ -192,7 +198,7 @@
       <p>8340728929</p>
     </div>
     <div class="mb-12 text-center sm:text-center">
-      <p class="px-28 sm:ps-28 sm:ms-1"><i class="fa fa-envelope" style="font-size:48px;color:white marg 4px"></i></p>
+      <p class="sm:px-28 sm:ps-28 sm:ms-1"><i class="fa fa-envelope" style="font-size:48px;color:white marg 4px"></i></p>
       <p class="py-2 sm:ps-5 font-bold sm:py-2">Email</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uitshashikesh@gmail.com</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;shashikesh123xyz@gmail.com</p>
@@ -200,7 +206,7 @@
 
     <div class="mb-12 text-center sm:text-center">
       <!-- <p class="px-60 text-5xl sm:px-36 text-5xl"><FiInstagram /></p> -->
-      <p class="px-28 sm:ms-2"><i class="fa fa-instagram" style="font-size:48px;color:white"></i></p>
+      <p class="sm:px-28 sm:ms-2"><i class="fa fa-instagram" style="font-size:48px;color:white"></i></p>
       <p class="py-2 sm:ps-5 font-bold">Instagram</p>
       <p class="sm:ps-4">shashikesh_kumar_mishra</p>
       <p class="sm:ps-4">shashikesh_kumar_mishra</p>
@@ -208,7 +214,7 @@
 
     <div class="mb-12 text-center sm:text-center">
       <p class="px-60 text-5xl sm:px-36 text-5xl"><FaMapMarkerAlt /></p>
-      <p class="px-28"><i class="fa fa-map-marker" style="font-size:48px;color:white"></i></i></p>
+      <p class="sm:px-28"><i class="fa fa-map-marker" style="font-size:48px;color:white"></i></i></p>
       
       <p class="py-2 font-bold">Address</p>
       <p>Burdwan,West Bengal</p>
@@ -235,8 +241,24 @@
     <script>
       const menuBtn = document.getElementById("menu-btn");
       const menu = document.getElementById("menu");
+      const about = document.getElementById("about");
+      const education = document.getElementById("education");
+      const contact = document.getElementById("contact");
+      const project = document.getElementById("project");
 
       menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      about.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      contact.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      education.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      project.addEventListener("click", () => {
         menu.classList.toggle("hidden");
       });
     </script>
